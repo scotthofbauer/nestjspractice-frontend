@@ -19,7 +19,6 @@ const FeedItem: React.FC<IPost> = (props) => {
                 </ul>
                 <div>{`favorites: ${props.favorites.length}`}</div>
                  </div> 
-                 item
     </div>
     )
 };
