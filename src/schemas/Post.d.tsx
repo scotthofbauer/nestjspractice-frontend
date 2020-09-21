@@ -5,7 +5,8 @@ export interface IPost {
   title: string,
   message: string,
   categories: [],
-  favorites: []
+  favorites: [],
+  author: {}
   }
   
   export const PostSchema = new schema.Entity<IPost>(resources.post);
