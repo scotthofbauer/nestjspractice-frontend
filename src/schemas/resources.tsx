@@ -1,3 +1,6 @@
 export default {
-    post: 'post'
+    post: 'post',
+    user: 'user',
+    favorite: 'favorite',
+    category: 'category'
   };

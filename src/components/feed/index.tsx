@@ -1,6 +1,7 @@
 import * as React from 'react'
 import {IPost} from '../../schemas/Post.d'
-import useFeedService from './feedService';
+import FeedItem from './FeedItem/feedItem';
+import useFeedService from './services/feedService';
 
 const Feed: React.FC = () => {
     
@@ -13,7 +14,7 @@ const Feed: React.FC = () => {
         {state.posts.map((post :IPost) => {
             return(
                 <div key={post.id}> 
-                <div><pre>{JSON.stringify(post, null, 2)}</pre></div>
+                <FeedItem {...post}/>
                  </div>
             )
         })}

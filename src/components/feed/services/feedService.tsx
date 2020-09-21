@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { IPost } from "../../schemas/Post.d";
+import { IPost } from "../../../schemas/Post.d";
 
 const emptyList: IPost[] = []
     
