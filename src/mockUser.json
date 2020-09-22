@@ -1,0 +1,89 @@
+{
+    "id": 9,
+    "first_name": "Eric",
+    "last_name": "Johnson",
+    "bio": "refreshing database",
+    "posts": [
+        {
+            "id": 159,
+            "title": "love food",
+            "message": "food is so awesome"
+        },
+        {
+            "id": 158,
+            "title": "love food",
+            "message": "food is so awesome"
+        },
+        {
+            "id": 157,
+            "title": "love food",
+            "message": "food is so awesome"
+        },
+        {
+            "id": 156,
+            "title": "love food",
+            "message": "food is so awesome"
+        },
+        {
+            "id": 155,
+            "title": "love food",
+            "message": "food is so awesome"
+        },
+        {
+            "id": 154,
+            "title": "love food",
+            "message": "food is so awesome"
+        },
+        {
+            "id": 153,
+            "title": "love food",
+            "message": "food is so awesome"
+        },
+        {
+            "id": 152,
+            "title": "love food",
+            "message": "food is so awesome"
+        },
+        {
+            "id": 151,
+            "title": "frontend testing with categories",
+            "message": "useEffect with categories"
+        },
+        {
+            "id": 150,
+            "title": "frontend testing with categories",
+            "message": "useEffect with categories"
+        },
+        {
+            "id": 149,
+            "title": "frontend testing with categories",
+            "message": "useEffect with categories"
+        },
+        {
+            "id": 148,
+            "title": "frontend testing with categories",
+            "message": "useEffect with categories"
+        },
+        {
+            "id": 147,
+            "title": "frontend testing with categories",
+            "message": "useEffect with categories"
+        }
+    ],
+    "favorites": [
+        {
+            "userId": 9,
+            "postId": 159,
+            "id": 58
+        },
+        {
+            "userId": 9,
+            "postId": 147,
+            "id": 60
+        },
+        {
+            "userId": 9,
+            "postId": 148,
+            "id": 61
+        }]
+}

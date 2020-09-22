@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useState } from 'react';
 import { IPost } from '../../schemas/Post.d'
-import FeedItem from './FeedItem/feedItem';
+import FeedItem from './FeedItem/FeedItem';
 import useFeedService from './services/feedService';
 
 const Feed: React.FC = () => {
@@ -16,7 +16,7 @@ const Feed: React.FC = () => {
     console.log(state)
     return (
         <div>
-            <button onClick={() => setState(initState)}>refresh</button>
+            <button onClick={() => setState(initState)}>Refresh Feed</button>
             {state.error && <pre>ERROR! {state.error}...</pre>}
             {state.isPending && <pre>LOADING...</pre>}
             {state.posts.map((post: IPost) => {
