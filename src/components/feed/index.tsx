@@ -6,16 +6,17 @@ import useFeedService from './services/feedService';
 
 const Feed: React.FC = () => {
     const emptyList: IPost[] = []
-    const [state, setState] = useState({
+    const initState = {
         posts: emptyList,
         error: null,
         isPending: true
-    });
+    } 
+    const [state, setState] = useState(initState);
     useFeedService(state, setState)
     console.log(state)
     return (
         <div>
-            <button onClick={() => setState({posts: emptyList, error: null,isPending: true})}>refresh</button>
+            <button onClick={() => setState(initState)}>refresh</button>
             {state.error && <pre>ERROR! {state.error}...</pre>}
             {state.isPending && <pre>LOADING...</pre>}
             {state.posts.map((post: IPost) => {
