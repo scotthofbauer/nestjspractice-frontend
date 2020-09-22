@@ -15,10 +15,11 @@ const FeedItem: React.FC<IPost> = (props) => {
                     <div key={category.id}>
                     <li>{category.hashtag}</li>
                     </div>
-                )})}
+                )}) }
                 </ul>
                 <div>{`favorites: ${props.favorites.length}`}</div>
                  </div> 
+                 <br/>
     </div>
     )
 };

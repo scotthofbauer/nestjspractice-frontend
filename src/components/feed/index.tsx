@@ -7,6 +7,7 @@ const Feed: React.FC = () => {
     
     
      const state = useFeedService();
+     console.log(state)
     return (
         <div>
         {state.error && <pre>ERROR! {state.error}...</pre>}
