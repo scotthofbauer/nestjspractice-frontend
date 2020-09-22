@@ -6,7 +6,7 @@ const useFeedService = (state: {
   isPending: boolean
 }, setState: Function) => {
         useEffect(() => {
-          const getPostsData = () =>  {  
+          const getPostsData = () =>  {     
             return fetch('http://localhost:3001/posts').then(async(response) => {
               if (response.status !== 200) {
                   throw new Error(`${response.status} ${response.statusText}`);

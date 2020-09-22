@@ -11,14 +11,14 @@ const Feed: React.FC = () => {
         error: null,
         isPending: true
     });
-    const renderedState = useFeedService(state, setState)
+    useFeedService(state, setState)
     console.log(state)
     return (
         <div>
-            <button onClick={() => setState({posts: renderedState.posts, error: renderedState.error,isPending: true})}>refresh</button>
-            {renderedState.error && <pre>ERROR! {state.error}...</pre>}
-            {renderedState.isPending && <pre>LOADING...</pre>}
-            {renderedState.posts.map((post: IPost) => {
+            <button onClick={() => setState({posts: emptyList, error: null,isPending: true})}>refresh</button>
+            {state.error && <pre>ERROR! {state.error}...</pre>}
+            {state.isPending && <pre>LOADING...</pre>}
+            {state.posts.map((post: IPost) => {
                 return (
                     <div key={post.id}>
                         <FeedItem {...post} />
